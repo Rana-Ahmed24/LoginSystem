@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <link rel="stylesheet" href="css/signup.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+
+<form id="registered-form" class="vh-100">
+    <div class="container text-center py-4 mx-auto shadow rounded">
+        <div class="group  m-auto p-4 w-75">
+            <h1 class="text-light mb-4">Smart Login System</h1>
+            <input class="form-control mb-4" type="text" name="signupName" id="signupName" placeholder="Enter your name">
+            <input class="form-control mb-4" type="email" name="signupEmail" id="signupEmail" placeholder="Enter your email">
+            <input class="form-control mb-4" type="password" name="signupPassword" id="signupPassword" placeholder="Enter your password">
+            <p class="alert alert-danger d-none" id="nameMsg">Name must be at least 3 letters and only letters allowed.</p>
+            <p class="alert alert-danger d-none" id="emailMsg">Invalid email format.</p>
+            <p class="alert alert-danger d-none" id="passwordMsg">Password must be at least 6 characters, contain letters and numbers.</p>
+            <button class="btn btn-primary w-100 mb-4" type="submit" id="signupBtn">Sign up</button>
+            <p class="text-light mt-3">Already have an account? <a id="signInLink" href="../sign-in/login.html">Sign In</a></p>
+            <div class="alert alert-danger d-none" id="existMsg">Email already exists. Please use a different email.</div>
+
+        </div>
+    </div>
+
+
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="./js/index.js"></script>
+</body>
+</html>
